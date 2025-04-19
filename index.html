@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Mihai Cernusca - Resume</title>
+    <style>
+      @font-face {
+        font-family: "Soehne";
+        src: url(fonts/soehne-buch.woff2) format("woff2");
+        font-weight: normal;
+        font-style: normal;
+        -webkit-font-kerning: normal;
+        font-kerning: normal;
+      }
+
+      html {
+        font-size: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-size: 14px;
+        font-family: "Soehne", "Times New Roman", Times, serif;
+        margin: 0 auto;
+        color: #4f4f4f;
+        line-height: 1.5;
+      }
+
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        display: block;
+      }
+
+      a {
+        background-color: transparent;
+      }
+      a:active,
+      a:hover {
+        outline: 0;
+      }
+
+      div.page-break {
+        border: none;
+        margin: 0;
+        display: none;
+        page-break-after: always;
+      }
+      @media only screen and (min-width: 1024px) {
+        div.page-break {
+          border-bottom: 1px solid #ddd;
+          margin: 1cm -2cm;
+        }
+      }
+      @page {
+        size: letter portrait;
+        margin: 1.9cm 1.9cm;
+      }
+      main {
+        background: #fff;
+      }
+      @media only screen and (min-width: 1024px) {
+        html,
+        body {
+          background-color: #eee;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        main {
+          margin: 20px;
+        }
+      }
+      @media only screen and (min-width: 1024px) {
+        main {
+          margin: 1cm auto;
+          width: 22cm;
+          min-height: 28cm;
+          padding: 1.9cm;
+        }
+      }
+      @media only print {
+        main {
+          width: initial !important;
+          min-height: initial !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border: initial !important;
+          border-radius: initial !important;
+          background: initial !important;
+          box-shadow: initial !important;
+          page-break-after: always;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+      *:focus {
+        outline: 0 !important;
+      }
+
+      main {
+        position: relative;
+
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 12px;
+      }
+      main h1,
+      main h2,
+      main h3,
+      main h4,
+      main h5,
+      main h6 {
+        page-break-after: avoid;
+      }
+      main p {
+        margin: 0;
+      }
+      main p + p {
+        margin-top: 20px;
+      }
+      main table {
+        page-break-inside: avoid;
+      }
+      main ul,
+      main ol {
+        padding-left: 16px;
+        margin: 0 0;
+      }
+      main ul li {
+        list-style: square;
+        line-height: 1.6;
+      }
+      main strong {
+        font-weight: 600;
+      }
+      main a {
+        color: #444;
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+      }
+      time {
+        display: inline-block;
+      }
+      header {
+        text-align: left;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
+      header h1 {
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.5;
+        padding: 0;
+        margin: 0;
+        text-rendering: optimizeLegibility;
+        color: #4240b9;
+      }
+      header ul {
+        list-style: none;
+        padding-left: 0 !important;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 4px;
+        text-align: right;
+      }
+      header li {
+        display: block;
+      }
+      section {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 8px;
+      }
+
+      section details {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 8px;
+      }
+
+      section details p,
+      section details ul {
+        max-width: 600px;
+      }
+
+      section h2 {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.5;
+        padding: 0;
+        margin: 0;
+        text-rendering: optimizeLegibility;
+        color: #111;
+      }
+
+      section summary {
+        clear: both;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      section summary .job {
+        font-size: 1.2em;
+      }
+
+      section summary .job-title {
+        color: #4240b9;
+      }
+      section summary::-webkit-details-marker {
+        display: none;
+      }
+      section summary time {
+        color: #666;
+      }
+
+      section.summary {
+        font-size: 1.2rem;
+        margin: 20px 0 8px 0;
+      }
+
+      section.skills ul {
+        columns: 2;
+        column-gap: 16px;
+      }
+
+      section p + ul {
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1 itemprop="name">Mihai Cernusca</h1>
+        </div>
+        <ul>
+          <li>Brooklyn, NY 11215</li>
+          <li>
+            <a href="https://mihaicernusca.com" itemprop="url"
+              >mihaicernusca.com</a
+            >
+          </li>
+          <li>
+            <a href="mailto:mcernusca@gmail.com" itemprop="url"
+              >mcernusca@gmail.com</a
+            >
+          </li>
+          <li>he/him</li>
+        </ul>
+      </header>
+      <section class="summary">
+        <p>
+          As a multidisciplinary engineer I transform concepts into reality.
+          With experience on founding teams, I excel at rapidly validating ideas
+          and crafting rich, web-based tools that solve real user problems. I
+          thrive in small, motivated teams where I can help shape product
+          strategy and drive results.
+        </p>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>UI Engineering</li>
+          <li>Product Design</li>
+          <li>Concept Development</li>
+          <li>Rapid Prototyping</li>
+          <li>Frontend Development (React, TypeScript, CSS)</li>
+          <li>WebGL Development (Three.js, React Three Fiber)</li>
+          <li>
+            Fullstack Development (TypeScript, Go, Python, Postgres, Redis)
+          </li>
+        </ul>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <details open="">
+          <summary>
+            <span class="job">
+              <span class="job-title">Software Engineer</span>,
+              <span
+                itemprop="worksFor"
+                itemscope=""
+                itemtype="http://schema.org/Organization"
+              >
+                <link
+                  href="https://www.mihaicernusca.com/flexhouse"
+                  itemprop="url"
+                />
+                <span itemprop="name">Visual Electric</span>
+              </span>
+              —
+              <a href="https://visualelectric.com" target="_blank"
+                >visualelectric.com</a
+              ></span
+            >
+            <time>2025 — now</time>
+          </summary>
+          <p>Helping shape the next generation of creative tools.</p>
+        </details>
+        <details open="">
+          <summary>
+            <span class="job">
+              <span class="job-title">Co-founder CTO</span>,
+              <span
+                itemprop="worksFor"
+                itemscope=""
+                itemtype="http://schema.org/Organization"
+              >
+                <link
+                  href="https://www.mihaicernusca.com/flexhouse"
+                  itemprop="url"
+                />
+                <span itemprop="name">Flexhouse</span>
+              </span>
+              —
+              <a href="https://www.mihaicernusca.com/flexhouse" target="_blank"
+                >flex.house</a
+              ></span
+            >
+            <time>2024</time>
+          </summary>
+          <p>
+            Flexhouse aimed to empower home-owners to be active participants in
+            the design process of their home.
+          </p>
+          <ul>
+            <li>
+              Led the engineering efforts and leveraged React Three
+              Fiber/Three.js to build a new type of residential architecture
+              design tool.
+            </li>
+            <li>
+              Developed a series of prototypes to explore interactions and
+              communicate the concept of a game inspired design tool that is
+              both fun and produces accurate construction plans.
+            </li>
+            <li>
+              Implemented algorithms for planar graph region detection, polygon
+              boolean operations, path expansion and more.
+            </li>
+          </ul>
+        </details>
+        <details open="">
+          <summary>
+            <span class="job">
+              <span class="job-title">Founding Product Design Engineer</span>,
+              <span
+                itemprop="worksFor"
+                itemscope=""
+                itemtype="http://schema.org/Organization"
+              >
+                <link
+                  href="https://www.mihaicernusca.com/re-collect"
+                  itemprop="url"
+                />
+                <span itemprop="name">re:collect</span>
+              </span>
+              —
+              <a href="https://www.mihaicernusca.com/re-collect" target="_blank"
+                >re-collect.ai</a
+              ></span
+            >
+            <time>2021 — 2024</time>
+          </summary>
+          <p>
+            re:collect aimed to help knowledge workers maximize the value of the
+            content they consume.
+          </p>
+          <ul>
+            <li>
+              Led the zero-to-one creation of an automated knowledge management
+              platform.
+            </li>
+            <li>
+              Created a browser extension that automatically collects content
+              based on attention metrics.
+            </li>
+            <li>
+              Created a web-based infinite canvas ideation tool, leveraging
+              machine learning to surface insights seamlessly and support
+              creative flow.
+            </li>
+            <li>
+              Developed and evaluated experimental user interfaces,
+              collaborating with users to gather insights that shaped product
+              direction.
+            </li>
+          </ul>
+        </details>
+        <details open="">
+          <summary>
+            <span class="job">
+              <span class="job-title"
+                >Senior Product Design Engineer - Core Product</span
+              >,
+              <span
+                itemprop="worksFor"
+                itemscope=""
+                itemtype="http://schema.org/Organization"
+              >
+                <link
+                  href="https://www.mihaicernusca.com/whereby"
+                  itemprop="url"
+                />
+                <span itemprop="name">Whereby</span>
+              </span>
+              —
+              <a href="https://www.mihaicernusca.com/whereby" target="_blank"
+                >whereby.com</a
+              ></span
+            >
+            <time>2019 — 2021</time>
+          </summary>
+          <p>Whereby aimed to be the easiest way to connect over video.</p>
+          <ul>
+            <li>
+              Played a key role in rebuilding the web meetings client as a
+              modern responsive React application, owning the room layout and
+              animation engines.
+            </li>
+            <li>
+              Led design for major features, including
+              <a
+                href="https://www.producthunt.com/products/whereby#picture-in-picture-by-whereby"
+                target="_blank"
+                >Picture-in-Picture</a
+              >, the
+              <a
+                href="https://www.producthunt.com/products/whereby#xl-video-rooms-in-whereby"
+                target="_blank"
+                >XL Room experience</a
+              >, and
+              <a
+                href="https://www.producthunt.com/products/whereby#breakout-groups-by-whereby"
+                target="_blank"
+                >Breakout Groups</a
+              >.
+            </li>
+            <li>
+              Conducted user experience interviews in collaboration with
+              research team to gather insights and improve usability.
+            </li>
+            <li>
+              Shaped and articulated the core product vision to stakeholders,
+              focusing on user needs and strategic goals.
+            </li>
+            <li>
+              In my time there the team grew from 22 to over 150, revenue 6x and
+              served millions of customers daily.
+            </li>
+          </ul>
+        </details>
+
+        <details open="">
+          <summary>
+            <span class="job">
+              <span class="job-title">Contract Developer</span>,
+              <span
+                itemprop="worksFor"
+                itemscope=""
+                itemtype="http://schema.org/Organization"
+              >
+                <span itemprop="name">Various Clients</span>
+              </span></span
+            >
+            <time>2016 — 2019</time>
+          </summary>
+          <ul>
+            <li>
+              Built an interactive storytelling experience for
+              <a href="http://www.hyperakt.com/" target="_blank">Hyperakt</a>:
+              <a href="https://www.mihaicernusca.com/america-off-balance"
+                >America Off Balance</a
+              >. They went on to call it "one of the most elaborate things we've
+              ever built". The project was nominated for 2019 Webby Awards. I
+              <a
+                href="https://www.mihaicernusca.com/off-balance"
+                target="_blank"
+                >gave a talk about the project at React Rally 2019</a
+              >.
+            </li>
+            <li>
+              Worked with Weav Music to implemented new features in their iOS
+              running app:
+              <a
+                href="https://medium.com/@weavmusic/whats-so-adaptive-about-our-music-bc9190772890"
+                target="_blank"
+                >Weav Run</a
+              >.
+            </li>
+            <li>
+              Prototyped an on demand parking service for Jaguar Land Rover and
+              EY.
+            </li>
+            <li>
+              Helped Tech City UK to build out new plugins for their web based
+              learning platform.
+            </li>
+          </ul>
+        </details>
+
+        <details open="">
+          <summary>
+            <span class="job">
+              <span class="job-title">Founding Product Design Engineer</span>,
+              <span
+                itemprop="worksFor"
+                itemscope=""
+                itemtype="http://schema.org/Organization"
+              >
+                <link
+                  href="https://www.mihaicernusca.com/swipe"
+                  itemprop="url"
+                />
+                <span itemprop="name">Swipe</span>
+              </span>
+              —
+              <a href="https://www.mihaicernusca.com/swipe" target="_blank"
+                >swipe.to</a
+              ></span
+            >
+            <time>2014 — 2016</time>
+          </summary>
+          <p>Swipe aimed to bring presentations to the web.</p>
+          <ul>
+            <li>
+              Designed version 2 of the product and led the migration from
+              Backbone to React.
+            </li>
+            <li>
+              Prototyped new features for an innovative real-time, web-based
+              presentation tool.
+            </li>
+            <li>
+              Established best practices for design and development while
+              mentoring junior team members.
+            </li>
+          </ul>
+        </details>
+        <details open="">
+          <summary>
+            <span class="job">
+              <span class="job-title">Early Career</span>
+            </span>
+            <time>2005 — 2014</time>
+          </summary>
+          <ul>
+            <li>
+              Designed and built iOS apps during the App Store's heyday, with
+              over 6 years of experience.
+            </li>
+            <li>
+              Co-founded
+              <a href="https://www.mihaicernusca.com/gifshop" target="_blank"
+                >GIF SHOP</a
+              >, an early iOS animation app featured multiple times on the App
+              Store, Wired, Gizmodo and more.
+            </li>
+            <li>
+              Developed custom content management, learning, and communication
+              platforms for clients during the Web 2.0 era.
+            </li>
+          </ul>
+        </details>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <details>
+          <summary>
+            <span class="job"
+              ><span class="job-title">Media Arts and Animation BFA</span>,
+              <span
+                itemprop="alumniOf"
+                itemscope=""
+                itemtype="http://schema.org/EducationalOrganization"
+              >
+                <link href="https://www.cuhk.edu.hk/" itemprop="url" />
+                <span itemprop="name"
+                  >The Illinois Institute of Art — Schaumburg</span
+                >
+              </span> </span
+            ><time>2005 — 2008</time>
+          </summary>
+          <ul>
+            <li>Hosted workshop: Maxscript for artists, 2008</li>
+            <li>Hosted workshop: Web development for artists, 2008</li>
+            <li>Participant — FJORG! Siggraph 2008</li>
+            <li>Best Team Animation — ARTimation 2008 Digital Arts Festival</li>
+            <li>
+              Visual Voltage (AIGA Student Chapter at ILIS) Webmaster, 2008
+            </li>
+            <li>
+              2nd place — 2005 ILIS High School Senior Scholarship Competition
+            </li>
+            <li>
+              1st place — 2004 SkillsUSA National 3D Animation Competition
+            </li>
+          </ul>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>
